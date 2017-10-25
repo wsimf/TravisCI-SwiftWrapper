@@ -10,12 +10,21 @@
 		01C673F188944D565A0D6868 /* Pods_TravisCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2105C4987468CBF9432DA9 /* Pods_TravisCITests.framework */; };
 		88561D2F24F01EBCC8B317CE /* Pods_TravisCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D6091FFF8CFFCE5191DEED /* Pods_TravisCI.framework */; };
 		8D0649BF1FA118F1007123EF /* TravisCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0649B51FA118F1007123EF /* TravisCI.framework */; };
-		8D0649C41FA118F1007123EF /* TravisCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649C31FA118F1007123EF /* TravisCITests.swift */; };
+		8D0649C41FA118F1007123EF /* TravisConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649C31FA118F1007123EF /* TravisConfigTests.swift */; };
 		8D0649C61FA118F1007123EF /* TravisCI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0649B81FA118F1007123EF /* TravisCI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D0649D41FA11B94007123EF /* TravisRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649D01FA11B93007123EF /* TravisRepository.swift */; };
 		8D0649D51FA11B94007123EF /* TravisCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649D11FA11B93007123EF /* TravisCommit.swift */; };
 		8D0649D61FA11B94007123EF /* TravisBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649D21FA11B93007123EF /* TravisBuild.swift */; };
 		8D0649D71FA11B94007123EF /* TravisAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649D31FA11B93007123EF /* TravisAccount.swift */; };
+		8D0649DF1FA11CB9007123EF /* TravisSessionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649DD1FA11CB9007123EF /* TravisSessionConfig.swift */; };
+		8D0649E01FA11CB9007123EF /* TravisConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649DE1FA11CB9007123EF /* TravisConfig.swift */; };
+		8D0649E31FA11CE3007123EF /* TravisAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649E21FA11CE3007123EF /* TravisAuth.swift */; };
+		8D0649E61FA1244D007123EF /* TravisError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649E51FA1244D007123EF /* TravisError.swift */; };
+		8D0649E81FA12E5C007123EF /* TravisSessionConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649E71FA12E5C007123EF /* TravisSessionConfigTests.swift */; };
+		8D0649EB1FA133C1007123EF /* UrlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649EA1FA133C1007123EF /* UrlManager.swift */; };
+		8D0649ED1FA13CFD007123EF /* TravisCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649EC1FA13CFD007123EF /* TravisCommunicator.swift */; };
+		8D0649EF1FA14151007123EF /* TravisAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649EE1FA14151007123EF /* TravisAuthAdapter.swift */; };
+		8D0649F11FA14229007123EF /* TravisAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649F01FA14229007123EF /* TravisAuthTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +46,21 @@
 		8D0649B81FA118F1007123EF /* TravisCI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TravisCI.h; sourceTree = "<group>"; };
 		8D0649B91FA118F1007123EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D0649BE1FA118F1007123EF /* TravisCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D0649C31FA118F1007123EF /* TravisCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisCITests.swift; sourceTree = "<group>"; };
+		8D0649C31FA118F1007123EF /* TravisConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisConfigTests.swift; sourceTree = "<group>"; };
 		8D0649C51FA118F1007123EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D0649D01FA11B93007123EF /* TravisRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisRepository.swift; sourceTree = "<group>"; };
 		8D0649D11FA11B93007123EF /* TravisCommit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisCommit.swift; sourceTree = "<group>"; };
 		8D0649D21FA11B93007123EF /* TravisBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisBuild.swift; sourceTree = "<group>"; };
 		8D0649D31FA11B93007123EF /* TravisAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisAccount.swift; sourceTree = "<group>"; };
+		8D0649DD1FA11CB9007123EF /* TravisSessionConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisSessionConfig.swift; sourceTree = "<group>"; };
+		8D0649DE1FA11CB9007123EF /* TravisConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisConfig.swift; sourceTree = "<group>"; };
+		8D0649E21FA11CE3007123EF /* TravisAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisAuth.swift; sourceTree = "<group>"; };
+		8D0649E51FA1244D007123EF /* TravisError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisError.swift; sourceTree = "<group>"; };
+		8D0649E71FA12E5C007123EF /* TravisSessionConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisSessionConfigTests.swift; sourceTree = "<group>"; };
+		8D0649EA1FA133C1007123EF /* UrlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlManager.swift; sourceTree = "<group>"; };
+		8D0649EC1FA13CFD007123EF /* TravisCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisCommunicator.swift; sourceTree = "<group>"; };
+		8D0649EE1FA14151007123EF /* TravisAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisAuthAdapter.swift; sourceTree = "<group>"; };
+		8D0649F01FA14229007123EF /* TravisAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisAuthTests.swift; sourceTree = "<group>"; };
 		F7E0F9EA0267937A54E8CCC7 /* Pods-TravisCITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TravisCITests/Pods-TravisCITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA2105C4987468CBF9432DA9 /* Pods_TravisCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,6 +109,10 @@
 		8D0649B71FA118F1007123EF /* TravisCI */ = {
 			isa = PBXGroup;
 			children = (
+				8D0649E91FA133AF007123EF /* Network */,
+				8D0649E41FA1243F007123EF /* Utils */,
+				8D0649E11FA11CCE007123EF /* Auth */,
+				8D0649DC1FA11C9F007123EF /* Config */,
 				8D0649CF1FA11B68007123EF /* Models */,
 				8D0649B81FA118F1007123EF /* TravisCI.h */,
 				8D0649B91FA118F1007123EF /* Info.plist */,
@@ -101,7 +123,9 @@
 		8D0649C21FA118F1007123EF /* TravisCITests */ = {
 			isa = PBXGroup;
 			children = (
-				8D0649C31FA118F1007123EF /* TravisCITests.swift */,
+				8D0649C31FA118F1007123EF /* TravisConfigTests.swift */,
+				8D0649E71FA12E5C007123EF /* TravisSessionConfigTests.swift */,
+				8D0649F01FA14229007123EF /* TravisAuthTests.swift */,
 				8D0649C51FA118F1007123EF /* Info.plist */,
 			);
 			path = TravisCITests;
@@ -116,6 +140,41 @@
 				8D0649D01FA11B93007123EF /* TravisRepository.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8D0649DC1FA11C9F007123EF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8D0649DE1FA11CB9007123EF /* TravisConfig.swift */,
+				8D0649DD1FA11CB9007123EF /* TravisSessionConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		8D0649E11FA11CCE007123EF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8D0649EE1FA14151007123EF /* TravisAuthAdapter.swift */,
+				8D0649E21FA11CE3007123EF /* TravisAuth.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		8D0649E41FA1243F007123EF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8D0649E51FA1244D007123EF /* TravisError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8D0649E91FA133AF007123EF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8D0649EA1FA133C1007123EF /* UrlManager.swift */,
+				8D0649EC1FA13CFD007123EF /* TravisCommunicator.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		D1C9074685A5052D0BA9AD90 /* Pods */ = {
@@ -332,10 +391,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0649EB1FA133C1007123EF /* UrlManager.swift in Sources */,
 				8D0649D71FA11B94007123EF /* TravisAccount.swift in Sources */,
 				8D0649D41FA11B94007123EF /* TravisRepository.swift in Sources */,
+				8D0649E01FA11CB9007123EF /* TravisConfig.swift in Sources */,
+				8D0649EF1FA14151007123EF /* TravisAuthAdapter.swift in Sources */,
+				8D0649E31FA11CE3007123EF /* TravisAuth.swift in Sources */,
+				8D0649DF1FA11CB9007123EF /* TravisSessionConfig.swift in Sources */,
 				8D0649D51FA11B94007123EF /* TravisCommit.swift in Sources */,
 				8D0649D61FA11B94007123EF /* TravisBuild.swift in Sources */,
+				8D0649E61FA1244D007123EF /* TravisError.swift in Sources */,
+				8D0649ED1FA13CFD007123EF /* TravisCommunicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +409,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D0649C41FA118F1007123EF /* TravisCITests.swift in Sources */,
+				8D0649C41FA118F1007123EF /* TravisConfigTests.swift in Sources */,
+				8D0649E81FA12E5C007123EF /* TravisSessionConfigTests.swift in Sources */,
+				8D0649F11FA14229007123EF /* TravisAuthTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +552,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TravisCI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.sudara.TravisCI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -507,6 +576,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = TravisCI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tech.sudara.TravisCI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

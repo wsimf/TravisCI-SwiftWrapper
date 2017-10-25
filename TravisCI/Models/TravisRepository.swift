@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 public enum TravisPermission {
     case admin
@@ -26,5 +27,13 @@ public struct TravisRepository {
     var lastBuildDuration: Int? = nil
     var lastBuildStartedAt: Date? = nil
     var lastBuildEndedAt: Date? = nil
+    
+}
 
+extension TravisRepository: URLConvertible {
+    
+    public func asURL() throws -> URL {
+        let urlString = "/repos/\(id)"
+        return try urlString.asURL()
+    }
 }
