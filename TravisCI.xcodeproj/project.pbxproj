@@ -16,15 +16,15 @@
 		8D0649D51FA11B94007123EF /* TravisCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649D11FA11B93007123EF /* TravisCommit.swift */; };
 		8D0649D61FA11B94007123EF /* TravisBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649D21FA11B93007123EF /* TravisBuild.swift */; };
 		8D0649D71FA11B94007123EF /* TravisAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649D31FA11B93007123EF /* TravisAccount.swift */; };
-		8D0649DF1FA11CB9007123EF /* TravisSessionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649DD1FA11CB9007123EF /* TravisSessionConfig.swift */; };
+		8D0649DF1FA11CB9007123EF /* TravisSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649DD1FA11CB9007123EF /* TravisSession.swift */; };
 		8D0649E01FA11CB9007123EF /* TravisConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649DE1FA11CB9007123EF /* TravisConfig.swift */; };
 		8D0649E31FA11CE3007123EF /* TravisAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649E21FA11CE3007123EF /* TravisAuth.swift */; };
 		8D0649E61FA1244D007123EF /* TravisError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649E51FA1244D007123EF /* TravisError.swift */; };
 		8D0649E81FA12E5C007123EF /* TravisSessionConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649E71FA12E5C007123EF /* TravisSessionConfigTests.swift */; };
 		8D0649EB1FA133C1007123EF /* UrlManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649EA1FA133C1007123EF /* UrlManager.swift */; };
-		8D0649ED1FA13CFD007123EF /* TravisCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649EC1FA13CFD007123EF /* TravisCommunicator.swift */; };
 		8D0649EF1FA14151007123EF /* TravisAuthAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649EE1FA14151007123EF /* TravisAuthAdapter.swift */; };
 		8D0649F11FA14229007123EF /* TravisAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649F01FA14229007123EF /* TravisAuthTests.swift */; };
+		8D0649F71FA164CC007123EF /* TravisSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0649F61FA164CC007123EF /* TravisSessionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,15 +52,15 @@
 		8D0649D11FA11B93007123EF /* TravisCommit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisCommit.swift; sourceTree = "<group>"; };
 		8D0649D21FA11B93007123EF /* TravisBuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisBuild.swift; sourceTree = "<group>"; };
 		8D0649D31FA11B93007123EF /* TravisAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisAccount.swift; sourceTree = "<group>"; };
-		8D0649DD1FA11CB9007123EF /* TravisSessionConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisSessionConfig.swift; sourceTree = "<group>"; };
+		8D0649DD1FA11CB9007123EF /* TravisSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisSession.swift; sourceTree = "<group>"; };
 		8D0649DE1FA11CB9007123EF /* TravisConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisConfig.swift; sourceTree = "<group>"; };
 		8D0649E21FA11CE3007123EF /* TravisAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravisAuth.swift; sourceTree = "<group>"; };
 		8D0649E51FA1244D007123EF /* TravisError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisError.swift; sourceTree = "<group>"; };
 		8D0649E71FA12E5C007123EF /* TravisSessionConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisSessionConfigTests.swift; sourceTree = "<group>"; };
 		8D0649EA1FA133C1007123EF /* UrlManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlManager.swift; sourceTree = "<group>"; };
-		8D0649EC1FA13CFD007123EF /* TravisCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisCommunicator.swift; sourceTree = "<group>"; };
 		8D0649EE1FA14151007123EF /* TravisAuthAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisAuthAdapter.swift; sourceTree = "<group>"; };
 		8D0649F01FA14229007123EF /* TravisAuthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisAuthTests.swift; sourceTree = "<group>"; };
+		8D0649F61FA164CC007123EF /* TravisSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisSessionManager.swift; sourceTree = "<group>"; };
 		F7E0F9EA0267937A54E8CCC7 /* Pods-TravisCITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCITests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TravisCITests/Pods-TravisCITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA2105C4987468CBF9432DA9 /* Pods_TravisCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,8 +145,9 @@
 		8D0649DC1FA11C9F007123EF /* Config */ = {
 			isa = PBXGroup;
 			children = (
+				8D0649F61FA164CC007123EF /* TravisSessionManager.swift */,
 				8D0649DE1FA11CB9007123EF /* TravisConfig.swift */,
-				8D0649DD1FA11CB9007123EF /* TravisSessionConfig.swift */,
+				8D0649DD1FA11CB9007123EF /* TravisSession.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -172,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				8D0649EA1FA133C1007123EF /* UrlManager.swift */,
-				8D0649EC1FA13CFD007123EF /* TravisCommunicator.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -397,11 +397,11 @@
 				8D0649E01FA11CB9007123EF /* TravisConfig.swift in Sources */,
 				8D0649EF1FA14151007123EF /* TravisAuthAdapter.swift in Sources */,
 				8D0649E31FA11CE3007123EF /* TravisAuth.swift in Sources */,
-				8D0649DF1FA11CB9007123EF /* TravisSessionConfig.swift in Sources */,
+				8D0649DF1FA11CB9007123EF /* TravisSession.swift in Sources */,
+				8D0649F71FA164CC007123EF /* TravisSessionManager.swift in Sources */,
 				8D0649D51FA11B94007123EF /* TravisCommit.swift in Sources */,
 				8D0649D61FA11B94007123EF /* TravisBuild.swift in Sources */,
 				8D0649E61FA1244D007123EF /* TravisError.swift in Sources */,
-				8D0649ED1FA13CFD007123EF /* TravisCommunicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

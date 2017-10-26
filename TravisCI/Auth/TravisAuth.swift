@@ -9,21 +9,21 @@
 import Foundation
 import Alamofire
 
-public class TravisAuth : TravisCommunicator {
+public class TravisAuth {
     
     let githubToken: String
+    let session: TravisSession
     
     public init(withGithubToken githubToken: String, _ configType: TravisConfigType) {
         self.githubToken = githubToken
-        super.init(withConfig: TravisSessionConfig.getSessionConfig(froTravisConfigType: configType))
-        getExchangeTravisToken()
+        self.session = TravisSession.getSessionConfig(froTravisConfigType: configType)
     }
     
     public func getExchangeTravisToken() {
-        config.sessionManager.request(UrlManager.auth(githubToken: self.githubToken))
+        session.request(UrlManager.auth(githubToken: githubToken))
             .validate()
             .responseJSON { (response) in
-                print(response.data)
-            }
+                
+        }
     }
 }

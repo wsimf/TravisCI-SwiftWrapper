@@ -9,17 +9,13 @@
 import Foundation
 import Alamofire
 
-protocol HostProvider {
-    func getHost() -> String
-}
-
-enum UrlManager : URLRequestConvertible {
+enum UrlManager : TravisURLRequestConvertible {
+    
     case auth(githubToken: String)
     case getAccounts
     case getBuilds(repoId: String)
     
-    static var hostProvider: HostProvider? = nil
-    
+    /// The HTTP method to use for the request as provided in http://api.travis-ci.com
     var method: HTTPMethod {
         switch self {
         case .auth:
@@ -31,29 +27,26 @@ enum UrlManager : URLRequestConvertible {
         }
     }
     
+    /// The URL path for the HTTP request
     var path: String {
         switch self {
-        case .auth:
-            return "/auth/github"
-            
-        case .getAccounts:
-            return "/accounts"
-            
-        case .getBuilds(let repoId):
-            return "/repos/\(repoId)/builds"
+        case .auth: return "/auth/github"
+        case .getAccounts: return "/accounts"
+        case .getBuilds(let repoId): return "/repos/\(repoId)/builds"
         }
     }
     
+    /// The parameters for the HTTP request, these parameters will be encoded
+    /// via the encoding instance given by the property `UrlManager.encoding`
     var parameters: [String : String]? {
         switch self {
-        case .auth(let token):
-            return ["github_token" : token]
-            
-        default:
-            return nil
+        case .auth(let token): return ["github_token" : token]
+        default: return nil
         }
     }
     
+    /// The encoding object to use for encoding the parameters in the stored property
+    /// `UrlManager.parameters`
     var encoding: ParameterEncoding {
         switch self {
         default:
@@ -61,12 +54,8 @@ enum UrlManager : URLRequestConvertible {
         }
     }
     
-    func asURLRequest() throws -> URLRequest {
-        guard let hostProvider = UrlManager.hostProvider else {
-            throw TravisError.NoHostProvider
-        }
-        
-        let url = try hostProvider.getHost().asURL()
+    func asURLRequest(withTravisConfig config: TravisConfig) throws -> URLRequest {
+        let url = try config.host.asURL()
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
         urlRequest.httpMethod = method.rawValue
         
@@ -76,5 +65,10 @@ enum UrlManager : URLRequestConvertible {
         
         return urlRequest
     }
+    
+    func asURLRequest() throws -> URLRequest {
+        return try asURLRequest(withTravisConfig: TravisConfig.getTravisConfig(forTye: .free)) //default
+    }
 }
+
 

@@ -9,19 +9,22 @@
 import Foundation
 import Alamofire
 
-struct TravisSessionConfig {
+struct TravisSession {
     
-    private static var sessionConfigs: [TravisConfigType : TravisSessionConfig] = [:]
+    private static var sessionConfigs: [TravisConfigType : TravisSession] = [:]
     
-    var travisConfig: TravisConfig? = nil
-    let sessionManager: Alamofire.SessionManager
+    let sessionManager: TravisSessionManager
     
     private init(sessionConfig: URLSessionConfiguration, travisConfig: TravisConfig) {
-        self.travisConfig = travisConfig
-        self.sessionManager = Alamofire.SessionManager(configuration: sessionConfig)
+        self.sessionManager = TravisSessionManager(configuration: sessionConfig, travisConfig: travisConfig)
+        self.sessionManager.adapter = TravisAuthAdapter()
     }
     
-    static func getSessionConfig(froTravisConfigType configType: TravisConfigType) -> TravisSessionConfig {
+    func request(_ urlRequest: TravisURLRequestConvertible) -> DataRequest {
+        return self.sessionManager.request(urlRequest)
+    }
+    
+    static func getSessionConfig(froTravisConfigType configType: TravisConfigType) -> TravisSession {
         if let session = sessionConfigs[configType] {
             return session
         }
@@ -34,7 +37,7 @@ struct TravisSessionConfig {
             "User-Agent" : newTravisConfig.userAgent
         ]
     
-        let session = TravisSessionConfig(sessionConfig: newSessionUrlConfig, travisConfig: newTravisConfig)
+        let session = TravisSession(sessionConfig: newSessionUrlConfig, travisConfig: newTravisConfig)
         sessionConfigs[configType] = session
         
         return session
