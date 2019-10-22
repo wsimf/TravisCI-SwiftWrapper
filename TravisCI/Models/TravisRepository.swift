@@ -33,7 +33,7 @@ public struct TravisRepository {
 extension TravisRepository: URLConvertible {
     
     public func asURL() throws -> URL {
-        let urlString = "/repos/\(id)"
+        let urlString = "/repos/\(id ?? -1)"
         return try urlString.asURL()
     }
 }
